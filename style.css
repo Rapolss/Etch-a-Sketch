@@ -9,13 +9,17 @@ body{
     min-height: 100vh;
     background-color: #10A19D;
     font-family: 'Righteous', cursive;
+
+
      
     
 }
 
 :root{
     --paletteSelector:#000000;
-    --gridSize:4;
+    --gridSize:1;
+
+    
 }
 
 
@@ -64,6 +68,7 @@ body{
     border-radius: 1em;
 
 
+
 }
 
 .canvas{
@@ -76,12 +81,31 @@ body{
     grid-template-rows: repeat(var(--gridSize), 1fr);
     gap: .1em;
     padding: .75em;
+    draggable: false;
+}
 
-
+.startingText{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    padding: 2em
 }
 
 
 
 .pixel {
     background-color: #474747;
+}
+
+
+.resetbtn {
+    background-color:  #FF7000;
+    border: #FF7000;
+    height: 3em;
+    width: 6.5em;
+    border-radius: 1em;
+    font-family: 'Righteous', cursive;
+    color: beige;
 }
