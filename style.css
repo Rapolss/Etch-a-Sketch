@@ -18,6 +18,9 @@ body{
 :root{
     --paletteSelector:#000000;
     --gridSize:1;
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;
 
     
 }
