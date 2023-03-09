@@ -4,10 +4,7 @@ const palleteSwap = document.querySelector('#palette');
 const gridSizing = document.querySelector('#sizing');
 const canvas = document.querySelector('.canvas');
 const numbsize = document.querySelector('.numbsize');
-const pixel = document.querySelector('.pixel');
 
-
-let resetnum=gridSizing.value;
 
 
 let toggle = true;
@@ -64,6 +61,5 @@ function TogglePainting(){
 
 buttonreset.addEventListener('click', ClearPixel);
 gridSizing.addEventListener('input', CanvasResize);
-
 window.addEventListener('mousedown', TogglePainting);
 window.addEventListener('mouseup', TogglePainting);
